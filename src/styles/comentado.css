@@ -1,0 +1,64 @@
+body {
+    display: flex; /* Define o layout do body como flexível, permitindo o uso de propriedades de flexbox. */
+    justify-content: center; /* Centraliza os itens horizontalmente no container flex. */
+    align-items: center; /* Centraliza os itens verticalmente no container flex. */
+    min-height: 100vh; /* Define a altura mínima do body como 100% da altura da viewport (tela). */
+    background: #fc1e8a; /* Define a cor de fundo do body como um tom de rosa. */
+    user-select: none; /* Impede que o usuário selecione texto no body. */
+}
+
+.container {
+    position: relative; /* Define a posição do container como relativa, permitindo o posicionamento absoluto de elementos filhos. */
+    display: flex; /* Define o layout do container como flexível. */
+    flex-direction: column; /* Organiza os itens do container em uma coluna. */
+    justify-content: center; /* Centraliza os itens verticalmente no container. */
+    align-items: center; /* Centraliza os itens horizontalmente no container. */
+    gap: 30px; /* Define um espaço de 30px entre os itens do container. */
+    background: linear-gradient( /* Define um fundo com um gradiente linear. */
+      325deg, /* O ângulo do gradiente é de 325 graus. */
+      #03001e 0%, /* Cor inicial do gradiente (um tom escuro) no início (0%). */
+      #7303c0 30%, /* Cor intermediária (um tom de roxo) a 30%. */
+      #ec38bc 70%, /* Cor intermediária (um tom de rosa) a 70%. */
+      #fdeff9 100% /* Cor final (um tom muito claro) no final (100%). */
+    );
+    padding: 40px 60px; /* Adiciona um preenchimento de 40px em cima e embaixo, e 60px nas laterais. */
+}
+
+h2 {
+    font-size: 3em; /* Define o tamanho da fonte do h2 como 3 vezes o tamanho padrão. */
+    color: #fff; /* Define a cor do texto como branco. */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas. */
+    letter-spacing: 0.1em; /* Adiciona um espaçamento de 0.1em entre as letras. */
+}
+
+.reset {
+    padding: 15px 20px; /* Adiciona um preenchimento de 15px em cima e embaixo, e 20px nas laterais. */
+    width: 100%; /* Define a largura do botão como 100% do seu container pai. */
+    color: #000; /* Define a cor do texto como preto. */
+    background-color: #fff; /* Define a cor de fundo do botão como branco. */
+    border: none; /* Remove a borda padrão do botão. */
+    font-size: 1.5em; /* Define o tamanho da fonte do botão como 1.5 vezes o tamanho padrão. */
+    letter-spacing: 0.1em; /* Adiciona um espaçamento de 0.1em entre as letras do botão. */
+    text-transform: uppercase; /* Transforma o texto do botão em letras maiúsculas. */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão, indicando que é clicável. */
+    font-weight: 600; /* Define o peso da fonte como semi-negrito. */
+}
+
+.reset:focus {
+    color: #ec38bc; /* Muda a cor do texto para um tom de rosa quando o botão está em foco. */
+    background-color: #262809; /* Muda a cor de fundo para um tom escuro quando o botão está em foco. */
+}
+
+.game {
+    width: 430px; /* Define a largura do container do jogo como 430px. */
+    height: 430px; /* Define a altura do container do jogo como 430px. */
+    display: flex; /* Define o layout do container do jogo como flexível. */
+    flex-wrap: wrap; /* Permite que os itens dentro do container do jogo se movam para a próxima linha se não houver espaço suficiente. */
+    gap: 10px; /* Define um espaço de 10px entre os itens do container do jogo. */
+    transform-style: preserve-3d; /* Permite que os filhos do container mantenham suas transformações 3D. */
+    perspective: 500px; /* Define a perspectiva para a visualização 3D, afetando a profundidade dos elementos filhos. */
+}
+/*
+.item {}
+    position: relative; /* Define a posição do item como relativa, permitindo o posicionamento absoluto de elementos
+    
